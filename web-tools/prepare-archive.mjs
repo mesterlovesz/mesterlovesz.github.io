@@ -30,7 +30,7 @@ html = html.replace(/<a href="(?:\.\.\/\.\.\/GYARI\/worlds\/chinatown2\.dat|\.\.
 html = html.replaceAll('href="cut-content.md"', 'href="research/cut-content.md"')
   .replaceAll('href="unused-content.md"', 'href="research/unused-content.md"');
 html = html.replace('a menüben nincs hozzá pályaválasztó.', 'azóta a remake Bónusz menüjéből is elérhető.');
-html = html.replace('<nav class="toc">', '<nav class="toc"><a href="kiskina.html">← Kiskína menü</a><a href="index.html">Főoldal</a>');
+html = html.replace('<nav class="toc">', '<nav class="toc"><a href="kiskina.html">← Kiskína menü</a><a href="simple.html">Egyszerű főoldal</a><a href="kiskina-simple.html">Kiskína egyszerűen</a><a href="index.html">Retro főoldal</a>');
 html = html.replace('<style>', `<meta name="description" content="Kiskína, A Mesterlövész kihagyott pályája: képek, lejátszható beszédhangok, zene és visszafejtett fájlok.">
 <link rel="canonical" href="https://sniper.gay/archive.html">
 <meta property="og:type" content="article"><meta property="og:site_name" content="A Mesterlövész: Újratöltve"><meta property="og:locale" content="hu_HU">
@@ -40,9 +40,7 @@ html = html.replace('<style>', `<meta name="description" content="Kiskína, A Me
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="Kiskína: a kihagyott pálya — kínai utca az eredeti menü fémkeretében">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Kiskína — képes és hangos kutatási archívum"><meta name="twitter:description" content="Képek, hangok és visszafejtett történet A Mesterlövész kihagyott pályájáról."><meta name="twitter:image" content="https://sniper.gay/og-kiskina.jpg">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><style>`);
-html = html.replace('.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));', '.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));')
-  .replace('.audio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));', '.audio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));');
-html = html.replace('</style>', 'table{display:block;overflow-x:auto}td,th{min-width:9rem}.audio{flex-wrap:wrap}header{background:#170707 url(metal.svg);border-color:#b72c29}.archive-footer{padding:1.5rem;border-top:1px solid #743332;font-size:.85rem}.archive-footer p{margin:.4rem 0}</style>');
+html = html.replace(/<style>[\s\S]*?<\/style>/, '<link rel="stylesheet" href="simple.css"><link rel="stylesheet" href="archive.css">');
 html = html.replace(/<p><small>Az oldal és a média a saját telepítés helyi kutatásához készült;[\s\S]*?<\/small><\/p>/, '<footer class="archive-footer"><p>Nem hivatalos rajongói kutatás. A gyári képek, hangok és fájlok a jogtulajdonosoké; a felvételek a remake-ből készültek. A gyári forrásfájlokat nem módosítottuk.</p><p>Ezt az egész projektet egy LLM írta. Mindent <a href="https://www.mannin.hu/">mannin1337</a> promptolt, emberi kód nincs a projektben.</p><p><a href="kiskina.html">Kiskína menü</a> · <a href="https://github.com/mesterlovesz/">GitHub</a></p></footer>');
 if (/href="(?:\.\.\/|cut-content\.md|unused-content\.md)/.test(html)) throw new Error('Az archívumban helyi forráshivatkozás maradt.');
 await writeFile(join(site, 'archive.html'), html);

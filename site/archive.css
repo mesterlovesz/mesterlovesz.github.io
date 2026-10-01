@@ -1,0 +1,25 @@
+/* Az archívum ugyanazt az olvasási témát használja, saját médiarácsokkal. */
+main{width:min(980px,100%);margin:auto;padding:1.5rem}
+h2{margin-top:2.6rem;border-bottom:1px solid var(--border);padding-bottom:.4rem;scroll-margin-top:1rem}
+h3{margin-top:1.8rem}
+header .tag{padding:0;background:none;color:var(--muted);font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1rem}
+.grid figure{margin:0;background:var(--surface);border:1px solid var(--border)}
+.grid img{width:100%;display:block}
+figcaption{padding:.7rem 1rem}
+.box{background:var(--surface);border:1px solid var(--border);padding:1rem;margin:1rem 0}
+nav.toc{display:flex;flex-wrap:wrap;gap:.65rem 1.3rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+table{display:block;overflow-x:auto}td,th{min-width:9rem}table.compare th:first-child{min-width:14rem}
+audio{width:min(100%,300px);height:40px}
+.audio{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;border-bottom:1px solid var(--border);padding:.5rem .1rem}
+.audio span{min-width:5rem}
+.audio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:0 1.5rem}
+small{color:var(--muted)}li{margin:.35rem 0}ul.cols{columns:3}
+.ev{display:inline-block;padding:.1rem .45rem;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.ev-p{background:#1f4a2b;color:#b8f0c2}.ev-i{background:#4a3f1a;color:#f3de9a}.ev-u{background:#4a2020;color:#f5b5b5}
+.st{font-weight:700;font-size:.9rem}.st-both{color:#9fd8ff}.st-k{color:#f3de9a}.st-t{color:#d8b2ff}.st-none{color:#ff9b9b}.warn{color:#ffb77d}
+details{margin:1rem 0}summary{cursor:pointer;color:var(--link)}
+.archive-footer p{margin:.4rem 0}
+@media(max-width:800px){ul.cols{columns:1}}
+@media(max-width:600px){main{padding:1rem}}
+@media print{main{width:100%;padding:0}.grid figure{break-inside:avoid}nav.toc{display:none}}
