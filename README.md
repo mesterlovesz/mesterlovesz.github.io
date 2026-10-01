@@ -6,7 +6,7 @@ Az eredeti menü hangulatát követő statikus weboldal, a kampányból kihagyot
 
 ## A játék indítása — ISO és egy indító
 
-1. [Töltsd le a Windows játékoscsomagot](https://github.com/mesterlovesz/remake/releases/download/v0.1.0-player.1/Mesterlovesz-Ujratoltve-Windows.zip), és bontsd ki a ZIP teljes tartalmát.
+1. [Töltsd le a Windows játékoscsomagot](https://github.com/mesterlovesz/remake/releases/download/v0.1.0-player.2/Mesterlovesz-Ujratoltve-Windows.zip), és bontsd ki a ZIP teljes tartalmát.
 2. A [weboldal Játékfájlok gombjával](https://sniper.gay/#inditas) töltsd le az Archive.org magyar ISO-ját, és tedd az `Indit.bat` mellé.
 3. Dupla kattintás az `Indit.bat`-ra. Első alkalommal előkészíti az adatokat és elindítja a játékot.
 
