@@ -2,7 +2,7 @@ name: Mesterlövész weboldal
 on:
   push:
     branches: [main]
-    paths: ['site/**', 'web-upload-*.zip']
+    paths: ['site/**', 'web-upload-04.zip']
   workflow_dispatch:
 permissions:
   contents: write
