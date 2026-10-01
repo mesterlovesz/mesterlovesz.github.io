@@ -61,7 +61,7 @@ for original, output, title, image in [
 <link rel="canonical" href="{canonical}"><link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:title" content="{escape(title)}"><meta property="og:type" content="website">
 <meta property="og:image" content="https://sniper.gay/{image}"><meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="simple.css"></head><body>
+<link rel="stylesheet" href="simple.css?v=20261001-dark"></head><body>
 <a class="skip" href="#pages">Ugrás a tartalomra</a>
 <header><p class="eyebrow">Egyszerű nézet</p><h1>{escape(title)}</h1>
 <p>Minden fejezet egymás alatt olvasható. A betűméret a böngésző nagyításával szabadon növelhető.</p>
