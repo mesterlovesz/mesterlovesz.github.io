@@ -26,5 +26,3 @@ A játék forrása és játékoscsomagja [külön tárolóban](https://github.co
 - A megosztási képek: `site/og-main.jpg` és `site/og-kiskina.jpg`.
 
 Nem hivatalos rajongói projekt. Az eredeti játék és gyári anyagai a jogtulajdonosoké. A teljes eredeti játékot és az ISO-t ez a tároló nem tartalmazza.
-
-Ezt az egész projektet egy LLM írta. Mindent [mannin1337](https://www.mannin.hu/) promptolt, emberi kód nincs a projektben.
