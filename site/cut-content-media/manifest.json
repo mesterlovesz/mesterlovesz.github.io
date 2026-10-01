@@ -1,0 +1,711 @@
+[
+  {
+    "kind": "picture",
+    "file": "img/loading-chinatown.png",
+    "source": "misc\\loading_l\\chinatown.pcx",
+    "sha256": "b165cecc211f0ce6879d3332b0493d6bd3711ea4cef0ce08c158921036dcf798",
+    "note": "gyári töltőkép PCX-ből PNG-be alakítva"
+  },
+  {
+    "kind": "picture",
+    "file": "img/loading-temple.png",
+    "source": "misc\\loading_l\\temple.pcx",
+    "sha256": "8f4f5eb0fde4396f314eb169c4fb509bc23da06a097bffbc9ff8ef7d753b3c9b",
+    "note": "gyári töltőkép PCX-ből PNG-be alakítva"
+  },
+  {
+    "kind": "picture",
+    "file": "img/plan.png",
+    "source": "output/chinatown.{collision.obj,gameplay.json,scene.json}",
+    "sha256": "78596cc653e83cdeddec2e47beae913d8a367c8c1d410fafe2c314649b7a779b",
+    "note": "felülnézeti térkép a kinyert pályaadatokból"
+  },
+  {
+    "kind": "picture",
+    "file": "img/a01-start-retail.jpg",
+    "source": "docs/cut-content-media/shots/a01-start-retail.png",
+    "sha256": "9adea845fc64fc30644f0bffdd06c69c3ea68320cfaa478519943095c52c35c9",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/a02-start-west.jpg",
+    "source": "docs/cut-content-media/shots/a02-start-west.png",
+    "sha256": "88d8dc2c87e3f953f92d5bb9301aa43f74663f69a7363a4afee5749dcb9531fc",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/a03-soldier-o_postac1.jpg",
+    "source": "docs/cut-content-media/shots/a03-soldier-o_postac1.png",
+    "sha256": "b80b2210476e07abecaf9fac02ebf333195594b9d282e6477150fe822c20eb3f",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/a04-soldier-o_postac3.jpg",
+    "source": "docs/cut-content-media/shots/a04-soldier-o_postac3.png",
+    "sha256": "4417313cc08bbafdb0b3d21b32074961cc3a324b03939e3b34847e60c795be61",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/a05-soldier-o_postac2.jpg",
+    "source": "docs/cut-content-media/shots/a05-soldier-o_postac2.png",
+    "sha256": "afcc6391cd4360f980a22dcae1a8f3fee5b7178171212748bb4a7073ab6a5161",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/a06-start-kettle-room.jpg",
+    "source": "docs/cut-content-media/shots/a06-start-kettle-room.png",
+    "sha256": "6cf6224962ab05c797dbb6c8e899301f79fdfd2bbea634fce9fd9032fa328387",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/a07-ring-corridor.jpg",
+    "source": "docs/cut-content-media/shots/a07-ring-corridor.png",
+    "sha256": "2812db7ac8d0c9e56643f2ee05fdd705d804d250fc82fa05dd457cb6266e64d1",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b01-passage-mason13.jpg",
+    "source": "docs/cut-content-media/shots/b01-passage-mason13.png",
+    "sha256": "e3d4763f398a502e542104c3fe4a6cf9c4694c348688cc0adfd89f76e8854219",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b02-street-civilian.jpg",
+    "source": "docs/cut-content-media/shots/b02-street-civilian.png",
+    "sha256": "a25cad3ed5809a91824621a5913e3e77c2b11cfdf2cf393642aaf55db0661e07",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b03-street-market.jpg",
+    "source": "docs/cut-content-media/shots/b03-street-market.png",
+    "sha256": "14fa5c7a12570ecce6ef321106f3ffcf1dfe1bf9112a3ef27fe30c637fe56974",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b04-street-back-east.jpg",
+    "source": "docs/cut-content-media/shots/b04-street-back-east.png",
+    "sha256": "ce2a013b920610b781b550a92e182290beeb4606b94f17c49661457c3bddcb74",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b05-civilian-cywil1.jpg",
+    "source": "docs/cut-content-media/shots/b05-civilian-cywil1.png",
+    "sha256": "216eb0eab521f33f28d0f85a7461e8fcd3306370d48584d1acc36a8d859f1a61",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b06-civilian-cywil2.jpg",
+    "source": "docs/cut-content-media/shots/b06-civilian-cywil2.png",
+    "sha256": "de5b74117b89e731a954b041f1ba4068b728a09d805a3ea3238217e40aa00c92",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b07-civilian-cywil3.jpg",
+    "source": "docs/cut-content-media/shots/b07-civilian-cywil3.png",
+    "sha256": "6c9ad3ed1aaffb54f4ef1843f54fa40cbea8ec8cb28795af55dbe19438de1af6",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b08-civilian-cywil4.jpg",
+    "source": "docs/cut-content-media/shots/b08-civilian-cywil4.png",
+    "sha256": "1d4416185418e1d494e792c61e7e3417b41734192774964a11b56f7102bec08f",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b09-newspaper-gazeta.jpg",
+    "source": "docs/cut-content-media/shots/b09-newspaper-gazeta.png",
+    "sha256": "be0025fc30bb1fe7dd6340503ba2e2368110783b6c9a85a599c7a891491f5272",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b10-qra-o_postac21.jpg",
+    "source": "docs/cut-content-media/shots/b10-qra-o_postac21.png",
+    "sha256": "721dd15e22383f37332aa69b00a2749080b0ffee882ab786184995c8900ec7ac",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b11-qra-o_postac22.jpg",
+    "source": "docs/cut-content-media/shots/b11-qra-o_postac22.png",
+    "sha256": "d474eb94a166f868bf73cd22596447d915e0c2ef0434f6e93455459008f08e6a",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/b12-tv-room.jpg",
+    "source": "docs/cut-content-media/shots/b12-tv-room.png",
+    "sha256": "4563fc62fb5902d98d5cf5d89ec85aafd708e46f7458605aad7c98bc411ebb7c",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/c01-west-corridor.jpg",
+    "source": "docs/cut-content-media/shots/c01-west-corridor.png",
+    "sha256": "ecfa0c89b2a45d64de44aeb4a656588161055f00562275f8bc20b9cbe40ef76a",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/c02-marker-ChinioleOstrzezenie.jpg",
+    "source": "docs/cut-content-media/shots/c02-marker-ChinioleOstrzezenie.png",
+    "sha256": "5af1713adadf8e7fe90a97a493554d3fd869e5f1398f6d76844bc7b1ef04cf4f",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/c03-guard-o_postac10.jpg",
+    "source": "docs/cut-content-media/shots/c03-guard-o_postac10.png",
+    "sha256": "f0e5363857a7fffc766d61cd9413ad57d2840e4663d9f8a0f6424a34204274bb",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/c04-guard-o_postac11.jpg",
+    "source": "docs/cut-content-media/shots/c04-guard-o_postac11.png",
+    "sha256": "4ec42e28b9dc20d703ac0204e91e616a8d1ac2c24e6a12c4c6aa671b401a5e46",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/c05-guard-o_postac9.jpg",
+    "source": "docs/cut-content-media/shots/c05-guard-o_postac9.png",
+    "sha256": "9cc9cd10cacd343aa397a164654bf05fdce2dd19442bda4bdf76ded4c4f62c57",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/c06-west-shop.jpg",
+    "source": "docs/cut-content-media/shots/c06-west-shop.png",
+    "sha256": "e8578dfa587a06a39b05debcd033053edd5f4480806dca1d881a597581c2f321",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/c07-exit-corridor.jpg",
+    "source": "docs/cut-content-media/shots/c07-exit-corridor.png",
+    "sha256": "a71b2239a6d365beec58fb098582abdb254cd532b844bea94c8d2fb964aa2a86",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/c08-exit-door.jpg",
+    "source": "docs/cut-content-media/shots/c08-exit-door.png",
+    "sha256": "31f4429f83558930a2a16d9cc2ea0fc1ab438cff1f65f0f481ae7752a305b65a",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/d01-roof-rook.jpg",
+    "source": "docs/cut-content-media/shots/d01-roof-rook.png",
+    "sha256": "8b57e6982a18086b2e2469831cbf00c9303dee03a28d28bafe9b171f85e35664",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/d02-roof-watertower.jpg",
+    "source": "docs/cut-content-media/shots/d02-roof-watertower.png",
+    "sha256": "89096abb2d3c8727ed471658ff60a8febaaad7b421b631d63c69d1ebc41b7d74",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/d04-roof-east.jpg",
+    "source": "docs/cut-content-media/shots/d04-roof-east.png",
+    "sha256": "d725b5a7ad2c7bf4ccb83d0459d574fe0aa777eb8063f50fe17d84197c18f440",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/e01-dialog-Chiniole12.jpg",
+    "source": "docs/cut-content-media/shots/e01-dialog-Chiniole12.png",
+    "sha256": "4b1a158b23b42d3ba5637e4a70e5ade21ca1441e45074f0ae0af7acff03dce3f",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/e02-dialog-Chiniole13.jpg",
+    "source": "docs/cut-content-media/shots/e02-dialog-Chiniole13.png",
+    "sha256": "1ab5a2cb8bad21e61d7ea8348750038ae194c3650ff0fe4c758aa91c55017f0c",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/e03-dialog-Chiniole8.jpg",
+    "source": "docs/cut-content-media/shots/e03-dialog-Chiniole8.png",
+    "sha256": "ef0fc8956af92a31d6249a0c56d02d8775bd0fb6aa6760d77938b0226bec2837",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/e04-dialog-Chiniole20.jpg",
+    "source": "docs/cut-content-media/shots/e04-dialog-Chiniole20.png",
+    "sha256": "dd4a21b04ef5a645153bfbacb61fe5f42f50d564970fd18589af813bfbb4333c",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/f01-templom-start.jpg",
+    "source": "docs/cut-content-media/shots/f01-templom-start.png",
+    "sha256": "6bb66e78738dfa71fba13f90c78fbb8f90fb363f3cbd9907b48e5e429cbf1e3b",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/f02-templom-gate.jpg",
+    "source": "docs/cut-content-media/shots/f02-templom-gate.png",
+    "sha256": "d92eadbafda77ea08bdbe1f6733aad53bfd8d89be3f3be8eba954b494c0e8e24",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/f03-templom-tongpo.jpg",
+    "source": "docs/cut-content-media/shots/f03-templom-tongpo.png",
+    "sha256": "62e81ea27caf45484cc0494af65c4950d6a5063a27387770b16934d3c69d08dd",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/f04-templom-statue.jpg",
+    "source": "docs/cut-content-media/shots/f04-templom-statue.png",
+    "sha256": "8f95aba889cf50ceb6cd71c56367ff482ff42f6799b2b4f285483210c50ba5bb",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/x10-west-shop.jpg",
+    "source": "docs/cut-content-media/shots/x10-west-shop.png",
+    "sha256": "e8578dfa587a06a39b05debcd033053edd5f4480806dca1d881a597581c2f321",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/x11-exit-corridor.jpg",
+    "source": "docs/cut-content-media/shots/x11-exit-corridor.png",
+    "sha256": "697e92c4a153267e39bc5c9360f4c566d0d1f9cdcd6c49362d994ef0146debf3",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/x12-exit-door.jpg",
+    "source": "docs/cut-content-media/shots/x12-exit-door.png",
+    "sha256": "31f4429f83558930a2a16d9cc2ea0fc1ab438cff1f65f0f481ae7752a305b65a",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/x13-roof.jpg",
+    "source": "docs/cut-content-media/shots/x13-roof.png",
+    "sha256": "b2bd28cee842d841b17ef250af0eef9ee25b5434c090028923ee121cb80f8d6c",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/x14-roof2.jpg",
+    "source": "docs/cut-content-media/shots/x14-roof2.png",
+    "sha256": "e1a927e5737f8f8694b96c9f2a9b34e90968497d6bcf72940eebbe4606c112c4",
+    "note": "a remake fejetlen felvétele (tools/capture_kiskina.py)"
+  },
+  {
+    "kind": "picture",
+    "file": "img/d02-rook-closeup.jpg",
+    "source": "d02-roof-watertower kivágás",
+    "sha256": "5001039c0772631f438da597089641de428a4674a059f846dd527e52640a068f",
+    "note": "a varjú nagyítása (4x, nem élesebb a felvételnél)"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-01.wav",
+    "source": "sounds\\speech\\chinatown\\01.wav",
+    "sha256": "e90ba2f2bfab638aad30d7116497d83d6e477739e472fed928e7a20aa4d69f50"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-02.wav",
+    "source": "sounds\\speech\\chinatown\\02.wav",
+    "sha256": "f951e423038868ee07165418199beaff47f3d3ca2433f72933479dd4a7a7dcd3"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-03.wav",
+    "source": "sounds\\speech\\chinatown\\03.wav",
+    "sha256": "b36a489d1aad09196e14907286ac28210e8b3c218da3b51a1764848a4d3748cf"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-04.wav",
+    "source": "sounds\\speech\\chinatown\\04.wav",
+    "sha256": "7f70a7450c63e9365044b6bd641e29e7b463dd56c4557b7a91ebcf9100bf7db9"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-05.wav",
+    "source": "sounds\\speech\\chinatown\\05.wav",
+    "sha256": "e3faaca3c36ec0d20a1691c35108865b30c51032f7ec5b840ee683a79523bf9b"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-051.wav",
+    "source": "sounds\\speech\\chinatown\\051.wav",
+    "sha256": "0a867830f6bea588c0c98cabb671ec36a44c34b5b3bc4c73de2793c3c373f5ac"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-052.wav",
+    "source": "sounds\\speech\\chinatown\\052.wav",
+    "sha256": "d341d989b40d725c46fff072c438e4cdd87f0bd324309c612408ce75de76f341"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-053.wav",
+    "source": "sounds\\speech\\chinatown\\053.wav",
+    "sha256": "55de97e9c65a4a7f185eb687f2a9eb6f1fe999b74d065dbe4488e8fc6406be25"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-054.wav",
+    "source": "sounds\\speech\\chinatown\\054.wav",
+    "sha256": "aaaa412ccd24f93e1c187209c6be8615a02f874d1ebd276452e954c4ade8dad7"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-06.wav",
+    "source": "sounds\\speech\\chinatown\\06.wav",
+    "sha256": "c7aea99a64def35b7aee1d10c4341968800790ea504f2bbccf7f6b5818bef7b1"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-07.wav",
+    "source": "sounds\\speech\\chinatown\\07.wav",
+    "sha256": "a7f4c5cf737ac1c802bc4be34b09bfaeb4a31e111c960a3d21a0844d3eb98789"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-071.wav",
+    "source": "sounds\\speech\\chinatown\\071.wav",
+    "sha256": "96ce4b175d9fc8963c0ff998260a2c77b544c1b491c6235c55ff95c05edf2604"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-072.wav",
+    "source": "sounds\\speech\\chinatown\\072.wav",
+    "sha256": "035b88ffbdf1891f5cdf38d9e8f7a68b092c87ea9694e69eaab1688475a1ef5c"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-073.wav",
+    "source": "sounds\\speech\\chinatown\\073.wav",
+    "sha256": "8f4cbc9875a3394e39ec6f52b8c69b0153352c48aba7a16bc5b9b6b22190a2e7"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-08.wav",
+    "source": "sounds\\speech\\chinatown\\08.wav",
+    "sha256": "93792966a0fd5ba0bf4d24f9cf796051fc45a2bcecb26ec4930531a3a854a898"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-09.wav",
+    "source": "sounds\\speech\\chinatown\\09.wav",
+    "sha256": "1f5a40d20cd4d716e5eec2c96f79ab65a4382fe311094bbd86e3942ea7904275"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-10.wav",
+    "source": "sounds\\speech\\chinatown\\10.wav",
+    "sha256": "98545bd238bdfcbc27d7e23f9871ebe08173455d02b90bd88c1442b82f678a0d"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-11.wav",
+    "source": "sounds\\speech\\chinatown\\11.wav",
+    "sha256": "5eebe87f1f216a571fa5fef135ae9857e1147adea4b146e9ed1a6ec4d80d36d9"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-111.wav",
+    "source": "sounds\\speech\\chinatown\\111.wav",
+    "sha256": "fbf8b3fb4f4983d17ea7db9252d37e3552fcc0e4bf67a879bae5c165d404815a"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-112.wav",
+    "source": "sounds\\speech\\chinatown\\112.wav",
+    "sha256": "20c55a1ad6302bb8487255120e0ece6f90978c35921309bbbeb04d7c83fa4ed3"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-12.wav",
+    "source": "sounds\\speech\\chinatown\\12.wav",
+    "sha256": "b9401694b054978f276f6ec5929dc63e0105d2ce6b8797c634da0783c24125eb"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-13.wav",
+    "source": "sounds\\speech\\chinatown\\13.wav",
+    "sha256": "6306873956403a20b3bcc9bbc0b1c5d44f94865d69ecf97b83b9209352b88062"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-14.wav",
+    "source": "sounds\\speech\\chinatown\\14.wav",
+    "sha256": "ead7d4630a1dfb84f26d7c601b727555be4567c99bc8251b2184f94f4094f75e"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-15.wav",
+    "source": "sounds\\speech\\chinatown\\15.wav",
+    "sha256": "790c648044d2f14b352f28925f87a01ea45e5201ee62d9f0e02ae9f4dcb0b9b8"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-151.wav",
+    "source": "sounds\\speech\\chinatown\\151.wav",
+    "sha256": "f1394647eb0cea181ee6a43384b6ea486fd5c7a486a81dd12537ea767a8486ec"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-152.wav",
+    "source": "sounds\\speech\\chinatown\\152.wav",
+    "sha256": "24a78768b82ba64861f4c2d908fc84510393d1295a314614c586c91bdb3609bb"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-153.wav",
+    "source": "sounds\\speech\\chinatown\\153.wav",
+    "sha256": "4edb5d6e116743acb4e80d9b3eb4680e712da8d90b6d9e62b90ad671decb1e59"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-16.wav",
+    "source": "sounds\\speech\\chinatown\\16.wav",
+    "sha256": "48b634d2053b98f359a43b19ea70c4a7ef16c28558ff955f168d72f2e5a065d4"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-161.wav",
+    "source": "sounds\\speech\\chinatown\\161.wav",
+    "sha256": "200035d2ee57c3d67863afc3e000961e9298b6e3d714f7dbec89079bff93f649"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-17.wav",
+    "source": "sounds\\speech\\chinatown\\17.wav",
+    "sha256": "bb55cd160eb2b587a93031b956ba791a28e026acf4de2821f27bc9ac62d8b80b"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-18.wav",
+    "source": "sounds\\speech\\chinatown\\18.wav",
+    "sha256": "8c088d81c7f753e3ca2bbbefcde8cd69d60437a3b2a8a9457156e6b8b3cb1b6c"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-19.wav",
+    "source": "sounds\\speech\\chinatown\\19.wav",
+    "sha256": "fb9ebd04d138452da9c147cd491686f45dab77ca14c278c467814bc71c60ad71"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-20.wav",
+    "source": "sounds\\speech\\chinatown\\20.wav",
+    "sha256": "6b7fdba91a908fdc28a6df70c8b4320fab608bbfc3bdd3fcc0fb951fe1e288f3"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-201.wav",
+    "source": "sounds\\speech\\chinatown\\201.wav",
+    "sha256": "79778786d91113ba55afb1b80e131455acc9fcea006f9ca416f8a0e93755232b"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-22.wav",
+    "source": "sounds\\speech\\chinatown\\22.wav",
+    "sha256": "aee51c6e7ab34410f4a91b0aa026d9b80d264b4ed850438a76eb840d609f2940"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-221.wav",
+    "source": "sounds\\speech\\chinatown\\221.wav",
+    "sha256": "65d2774178d224e11519bbfb521551c47e61401a10319fbc9e7e97e2f7fa99f1"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-23.wav",
+    "source": "sounds\\speech\\chinatown\\23.wav",
+    "sha256": "441fdcdfb7bfd9fe4a1c94c19d59ecfef849b718c7a2f1203bf1e5add4ee6675"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-24.wav",
+    "source": "sounds\\speech\\chinatown\\24.wav",
+    "sha256": "0288a89e208cb3788fb829c5b1183169206d81a15cc84157d7a6c05560331cc8"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-25.wav",
+    "source": "sounds\\speech\\chinatown\\25.wav",
+    "sha256": "31ff54863525f3ad1368387a1eb2b1ab02746f1e962ebcdfe99a4ed32d47f1b8"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-26.wav",
+    "source": "sounds\\speech\\chinatown\\26.wav",
+    "sha256": "03348e3fe126985c2dca9d04ff4f81a832ef823073d114439378bfb902b17bad"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-27.wav",
+    "source": "sounds\\speech\\chinatown\\27.wav",
+    "sha256": "3cb1f4ad7686fae770a8fd212993d5ab62f50237e23ed56c67ffd2a38bd451ba"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-28.wav",
+    "source": "sounds\\speech\\chinatown\\28.wav",
+    "sha256": "dc8b8642cf36f95ae3f291ba7266ce67ced4c28555c302482774c69dae754fed"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-301.wav",
+    "source": "sounds\\speech\\chinatown\\301.wav",
+    "sha256": "43b306e41b6d60259b97a62538dd262a179b5e5dd3dd78c61eb0540bef0c322f"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-31.wav",
+    "source": "sounds\\speech\\chinatown\\31.wav",
+    "sha256": "da950007a3cf2d442adb352227bd73e5506c2e678ca373c413bc6ce095a92e81"
+  },
+  {
+    "kind": "speech",
+    "file": "speech-32.wav",
+    "source": "sounds\\speech\\chinatown\\32.wav",
+    "sha256": "7ababf8cde421ff24a471826ebb23e2c01dc4d9f5dc4e4311e90c56290682361"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-dead0.wav",
+    "source": "sounds\\enemies\\china\\dead0.wav",
+    "sha256": "4b68fc48a8d00ba63e75a358de8668452f0b92704e521dfdd32d86b0c2e6a9c5"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-dead1.wav",
+    "source": "sounds\\enemies\\china\\dead1.wav",
+    "sha256": "ae62dc53150ffd09bd746e2811e19b901419f267e90eaf7e76943256c0289693"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-dead2.wav",
+    "source": "sounds\\enemies\\china\\dead2.wav",
+    "sha256": "2e9e00773f8fb1e2e9b612e681812e6cdf088644b754e5bf2a995d8d7196aab6"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-dead3.wav",
+    "source": "sounds\\enemies\\china\\dead3.wav",
+    "sha256": "18f37e03f120abd29cb80a74e56a11e17f60ddc46873948e3155ee562dcf85a4"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-dead4.wav",
+    "source": "sounds\\enemies\\china\\dead4.wav",
+    "sha256": "f61842130f751a3ca0dade06ad8ed4982499cfa06c122b7e3065a011faf4784f"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-dead5.wav",
+    "source": "sounds\\enemies\\china\\dead5.wav",
+    "sha256": "53844bbd38c2e9e5b5cf661bbb873237cfa4a867cee7019a2030db10acab1eed"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-dead6.wav",
+    "source": "sounds\\enemies\\china\\dead6.wav",
+    "sha256": "038456255b5f59572d15ced06c75e7b150b07c9ff27adc7bcf5830e1ebce25d6"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-dead7.wav",
+    "source": "sounds\\enemies\\china\\dead7.wav",
+    "sha256": "5f3917c1bacdaeb6031d7d6c201dcc092ab258eaf298a450859f4fde26091b29"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-halt0.wav",
+    "source": "sounds\\enemies\\china\\halt0.wav",
+    "sha256": "a71c79e18f9191488962cc4fff50d2f6ed8c3052394e6aad8b21234a8c822846"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-halt1.wav",
+    "source": "sounds\\enemies\\china\\halt1.wav",
+    "sha256": "a663b0779701031aaa8b3df360011984794c5d8434c0aa4bf9a4c32464536d1a"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-halt2.wav",
+    "source": "sounds\\enemies\\china\\halt2.wav",
+    "sha256": "60f4115c71dd2a713d43b85f5724d3612bdec7b4cb64bd8e871d532623a27440"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-halt3.wav",
+    "source": "sounds\\enemies\\china\\halt3.wav",
+    "sha256": "2f8a082a5b22f8ba29f284e15ff2a4378b33a1a8f4857cc77f48d7dab6ae04b8"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-halt4.wav",
+    "source": "sounds\\enemies\\china\\halt4.wav",
+    "sha256": "646d202516806e8ae02091e39d49f3a1882a99497babba5f59e316478a187e3e"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-halt5.wav",
+    "source": "sounds\\enemies\\china\\halt5.wav",
+    "sha256": "f3c912505e4f60eb9ee8f25394029b6b30d1b15074aa689c8e9c106d855e2bc9"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-halt6.wav",
+    "source": "sounds\\enemies\\china\\halt6.wav",
+    "sha256": "4d81fda3eac887e91a74a061503f011d981f62dceb51b29087b6d5866d55471e"
+  },
+  {
+    "kind": "sfx",
+    "file": "china-halt7.wav",
+    "source": "sounds\\enemies\\china\\halt7.wav",
+    "sha256": "220c278f1391961d364f8dfdd7f6e3f6651cf92a75cb1ca4cc2ca9d3e7a5d507"
+  },
+  {
+    "kind": "music",
+    "file": "chinatown_spokoj.mp3",
+    "source": "sounds\\muza\\chinatown_spokoj.wav",
+    "sha256": "bca35a9262fea92fa3fd720713f604d578db7fbe6a0542766f84e79ecc2a6541",
+    "note": "az MP3 bitfolyam az eredeti WAV konténerből, újrakódolás nélkül kiemelve"
+  },
+  {
+    "kind": "music",
+    "file": "chinatown_akcja.mp3",
+    "source": "sounds\\muza\\chinatown_akcja.wav",
+    "sha256": "c387dff5736bea5761d5ea57523df128ce83ec5d237bce5c971a3ab1c21e9966",
+    "note": "az MP3 bitfolyam az eredeti WAV konténerből, újrakódolás nélkül kiemelve"
+  }
+]

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Mesterlövész: Újratöltve — a 2002-es játék újraírása Rustban</title>
+<meta name="description" content="A Mesterlövész: Újratöltve — nem hivatalos rajongói projekt: a 2002-es LithTech-játék (Sniper: Path of Vengeance) 1:1-es újraírása Rustban és Bevyben. Mind a 27 pálya végigjátszható; a játék saját, jogszerű példányodból dolgozik.">
+<meta name="theme-color" content="#0a0405">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A Mesterlövész: Újratöltve">
+<meta property="og:title" content="A Mesterlövész: Újratöltve">
+<meta property="og:description" content="A 2002-es A Mesterlövész 1:1-es újraírása Rustban és Bevyben. Mind a 27 pálya végigjátszható; nem hivatalos rajongói projekt.">
+<meta property="og:locale" content="hu_HU">
+<link rel="canonical" href="https://sniper.gay/">
+<meta property="og:url" content="https://sniper.gay/">
+<meta property="og:image" content="https://sniper.gay/og-main.jpg">
+<meta property="og:image:secure_url" content="https://sniper.gay/og-main.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A Mesterlövész: Újratöltve — vörös fémkeretes játékmenü">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Mesterlövész: Újratöltve">
+<meta name="twitter:description" content="A 2002-es játék újraírása Rustban, az eredeti játékélményt követve. Kiskína kutatási archívummal.">
+<meta name="twitter:image" content="https://sniper.gay/og-main.jpg">
+<meta name="twitter:image:alt" content="A Mesterlövész: Újratöltve — vörös fémkeretes játékmenü">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className+=" js"</script>
+</head>
+<body>
+<a class="skip" href="#pages">Ugrás a tartalomra</a>
+<div class="cabinet">
+  <i class="rivet a"></i><i class="rivet b"></i><i class="rivet c"></i><i class="rivet d"></i>
+
+  <header class="top">
+    <div class="plate">
+      <svg class="reticle" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="#ff3b30" stroke-linecap="round">
+          <circle cx="50" cy="50" r="40" stroke-width="3"/><circle cx="50" cy="50" r="24" stroke-width="1.4" opacity=".8"/>
+          <path d="M50 2v26M50 72v26M2 50h26M72 50h26" stroke-width="2.6"/>
+          <path d="M50 38v-3M50 62v3M38 50h-3M62 50h3M43 50h-1M58 50h1M50 43v-1M50 58v1" stroke-width="1.6"/>
+          <path d="M20 20l5 5M80 20l-5 5M20 80l5-5M80 80l-5-5" stroke-width="1.6" opacity=".7"/>
+          <g class="sweep"><path d="M50 50V10A40 40 0 0 1 78 22Z" fill="rgba(255,60,50,.22)" stroke="none"/><path d="M50 50V10" stroke-width="1.4"/></g>
+        </g>
+        <circle cx="50" cy="50" r="2.6" fill="#ffd34a"/>
+      </svg>
+      <div class="bits-h" aria-hidden="true" id="bitsH"></div>
+      <h1 class="title">A Mesterlövész<small>Újratöltve</small></h1>
+    </div>
+    <div class="head" aria-hidden="true"><b id="hdr">Főmenü</b></div>
+    <div class="hazard hz-box" aria-hidden="true"></div>
+  </header>
+
+  <div class="rail" aria-hidden="true">
+    <div class="hazard hz"></div>
+    <svg viewBox="0 0 92 600" preserveAspectRatio="xMidYMax meet" focusable="false">
+      <defs>
+        <linearGradient id="st" x1="0" x2="1"><stop offset="0" stop-color="#2a2323"/><stop offset=".35" stop-color="#d4cdc9"/><stop offset=".6" stop-color="#7d7471"/><stop offset="1" stop-color="#1c1616"/></linearGradient>
+        <pattern id="hz" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="14" height="14" fill="#090a0b"/><rect width="7" height="14" fill="#b8841f"/></pattern>
+      </defs>
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 150L58 262C66 284 56 300 46 306V470C46 520 66 540 92 548" stroke="#000" stroke-width="22"/>
+        <path d="M14 150L58 262C66 284 56 300 46 306V470C46 520 66 540 92 548" stroke="url(#st)" stroke-width="16"/>
+        <path d="M14 150L58 262C66 284 56 300 46 306V470C46 520 66 540 92 548" stroke="rgba(255,255,255,.28)" stroke-width="2" transform="translate(-3 0)"/>
+      </g>
+      <g stroke="#000" stroke-width="2">
+        <rect x="32" y="352" width="28" height="34" fill="url(#hz)"/><rect x="30" y="348" width="32" height="6" fill="#7d7471"/><rect x="30" y="384" width="32" height="6" fill="#7d7471"/>
+        <rect x="32" y="440" width="28" height="22" fill="url(#hz)"/>
+      </g>
+      <g fill="#241a1a" stroke="#000"><circle cx="46" cy="196" r="6"/><circle cx="46" cy="196" r="2.4" fill="#9a8f8a" stroke="none"/></g>
+      <g fill="none" stroke="#000" stroke-linecap="round">
+        <path d="M70 560c-18 4-24 22-8 28 14 4 24-6 18-18" stroke-width="12"/><path d="M70 560c-18 4-24 22-8 28 14 4 24-6 18-18" stroke="url(#st)" stroke-width="8"/>
+      </g>
+    </svg>
+  </div>
+
+  <main class="screen" id="screen">
+    <div class="hexbar" aria-hidden="true"><span id="hexH"></span></div>
+    <div class="bits-r" aria-hidden="true"><pre id="bitsR"></pre></div>
+    <svg class="scope" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#c2161c" stroke-linecap="round">
+        <circle cx="50" cy="50" r="46" stroke-width="2"/><circle cx="50" cy="50" r="30" stroke-width="1"/><circle cx="50" cy="50" r="12" stroke-width="1"/>
+        <path d="M50 0v40M50 60v40M0 50h40M60 50h40" stroke-width="1.6"/><path d="M26 26l6 6M74 26l-6 6M26 74l6-6M74 74l-6-6" stroke-width="1.2"/>
+        <path d="M50 12v6M50 82v6M12 50h6M82 50h6" stroke-width="2.4"/>
+      </g>
+    </svg>
+    <div class="deck">
+      <nav class="menu" aria-label="Főmenü">
+        <ul id="menu">
+          <li><a class="row" href="#rolunk" data-ghost="Rólunk"><i class="ar"></i><span class="lbl">Rólunk</span></a></li>
+          <li><a class="row" href="#tulajdonsagok" data-ghost="Tulajdonságok"><i class="ar"></i><span class="lbl">Tulajdonságok</span></a></li>
+          <li><a class="row" href="#inditas" data-ghost="Hogyan indítsd"><i class="ar"></i><span class="lbl">Hogyan indítsd</span></a></li>
+          <li><a class="row" href="#kiskina" data-ghost="Kiskína (kiadatlan pálya)"><i class="ar"></i><span class="lbl">Kiskína (kiadatlan pálya)</span></a></li>
+          <li><a class="row" href="#github" data-ghost="GitHub"><i class="ar"></i><span class="lbl">GitHub</span></a></li>
+        </ul>
+        <a class="btn sm archive-shortcut" href="simple.html">Egyszerű nézet →</a>
+        <i class="mcursor" id="mcursor" aria-hidden="true"></i>
+      </nav>
+
+      <div class="pages" id="pages">
+        <!-- ===== RÓLUNK ===== -->
+        <section class="pane" id="rolunk" aria-labelledby="h-rolunk" tabindex="0">
+          <h2 class="pt" id="h-rolunk">Rólunk</h2>
+          <p class="lead">A 2002-es <b>A Mesterlövész</b> (angolul <i>Sniper: Path of Vengeance</i>, LithTech Jupiter motor) magyar kiadásának újraírása <b>Rustban</b>, a <b>Bevy</b> motorral.</p>
+          <p>A cél az eredeti játékélmény <b>1:1-ben</b>: ugyanazok a pályák, küldetésszkriptek, szereplők, fegyverek, mozgás és hangok, az eredeti hibákkal együtt. A modern gépeken futáshoz szükséges kényelmi javításokon túl semmi új nincs benne.</p>
+          <ul class="stats" aria-label="Számok">
+            <li><b>27</b><span>játszható pálya</span></li>
+            <li><b>31</b><span>világfájl kinyerve</span></li>
+            <li><b>460+</b><span>automata teszt</span></li>
+            <li><b>43</b><span>kutatási jegyzet</span></li>
+          </ul>
+          <h3>Mi ez, és mi nem</h3>
+          <ul>
+            <li>Ez a <b>játék motorja és szabályrendszere</b> újraírva: a pályák, szkriptek, értékek a te saját, telepített példányodból jönnek.</li>
+            <li>A futtatáshoz az eredeti magyar játék <b>ISO-ja szükséges</b>; az indító ebből készíti elő a fájlokat. A feldolgozott játékadatok a gépeden, a projekt <code>output/</code> mappájában keletkeznek. A webes Kiskína-archívum külön kutatási válogatást tartalmaz képekből, hangokból és fájlokból.</li>
+            <li>Ezért <b>saját, jogszerű példány kell</b> az eredeti játékból (magyar kiadás, 2.33-as verzió).</li>
+            <li>Windowsra készül, Vulkan-képes videokártyával; más rendszeren nincs kipróbálva.</li>
+          </ul>
+          <p class="note">Nem hivatalos rajongói projekt. A játék és minden eleme a jogtulajdonosoké.</p>
+          <p><a class="btn sm" href="#tulajdonsagok" data-go="tulajdonsagok">Mit tud? →</a> <a class="btn sm" href="#inditas" data-go="inditas">Hogyan indítsd →</a></p>
+        </section>
+
+        <!-- ===== TULAJDONSÁGOK ===== -->
+        <section class="pane" id="tulajdonsagok" aria-labelledby="h-tul" tabindex="0">
+          <h2 class="pt" id="h-tul">Tulajdonságok</h2>
+          <ul class="cards">
+            <li class="card"><h3><i>01</i>Mind a 27 pálya</h3><p>Az első pályától a stáblistáig végigjátszható. Egy automata bejáró bot minden pályán eljut a gyári kijáratig, és a stáblista után a főmenübe tér vissza.</p></li>
+            <li class="card"><h3><i>02</i>Visszafejtett értékek</h3><p>Nem kitalált számok: a játék saját fájljaiból (cshell.dll, object.lto, Lithtech.exe) olvasva, a kódcímekkel együtt dokumentálva.</p></li>
+            <li class="card"><h3><i>03</i>Gyári MI és küldetések</h3><p>A küldetések az eredeti <code>gameai</code> és <code>dialogi</code> szkriptekből futnak; az őrök, civilek és ellenfelek a gyári viselkedési szabályokat követik.</p></li>
+            <li class="card"><h3><i>04</i>Párbeszédek</h3><p>Az eredeti párbeszédrendszer feliratokkal, válaszválasztással. Választhatsz nyílbillentyűvel vagy görgővel, a feliratok körvonalasak, jól olvashatók.</p></li>
+            <li class="card"><h3><i>05</i>Gyári menük, mentések</h3><p>Minden menüoldal a gyári elrendezéssel és beállításokkal: opciók, irányítás-újrakötés, mentés és töltés, gyorsmentés (F5 / F9).</p></li>
+            <li class="card"><h3><i>06</i>Hang</h3><p>Gyári hangok és zene, a hangmester-táblázat nyomon követve. Kapcsolható „Javított 3D hangzás” is van.</p></li>
+            <li class="card"><h3><i>07</i>A gyári megjelenítés</h3><p>Lightmapek, köd, gamma és additív effektek a gyári renderelő szabályai szerint, nem utánérzésre.</p></li>
+            <li class="card"><h3><i>08</i>Modern kényelem, gyári érzet</h3><p>Nincs képkockakorlát, a kép a monitor frissítéséhez igazodik (vsync). Irányítás: Szóköz ugrik, jobb egér a másodlagos lövés, E a használat. A játékmenet gyári marad.</p></li>
+            <li class="card"><h3><i>09</i>Opcionális HD textúrák</h3><p>Real-ESRGAN-nal, a saját gépeden készült nagyobb felbontású textúrák. Alapból ki van kapcsolva.</p></li>
+            <li class="card"><h3><i>10</i>Tesztek és próbák</h3><p>460 feletti automata teszt ellenőrzi a játék működését és a javításokat.</p></li>
+            <li class="card"><h3><i>11</i>Dokumentált visszafejtés</h3><p>43 jegyzet a <code>docs/</code> mappában: mi bizonyított, mi közelítő, hol van a kódban, milyen címen. Ellenőrizhető, nem hiszekegy.</p></li>
+            <li class="card"><h3><i>12</i>Nyílt forrás</h3><p>Minden elérhető a GitHubon: a forráskód, a leírás, a kutatási jegyzetek. <a class="btn sm" href="https://github.com/mesterlovesz/" data-gh="">Ugrás a GitHubra</a></p></li>
+            <li class="card wide"><h3><i>13</i>Kiskína, a kihagyott pálya</h3><p>A játék fájljai között maradt egy külön pálya, amely a kampány útvonalára nem kapcsolódik. A remake Bónusz menüjéből elindítható, a kutatás pedig külön oldalon olvasható.</p><a class="btn sm" href="kiskina.html">Kiskína: kiadatlan pálya →</a></li>
+          </ul>
+          <p class="small">Őszintén: a képpontos azonosság a valódi gyári futással még nincs összevetve; a pontos állapotot (ellenőrzött / közelítő) a <code>docs/</code> jegyzetei sorolják fel.</p>
+        </section>
+
+        <!-- ===== HOGYAN INDÍTSD ===== -->
+        <section class="pane" id="inditas" aria-labelledby="h-ind" tabindex="0">
+          <h2 class="pt" id="h-ind">Hogyan indítsd</h2>
+          <p class="note"><b>ISO a mappába → dupla kattintás az indítóra → játék.</b> A Windowsos játékoscsomagban benne van az előre lefordított játék és az indító.</p>
+          <p>Windows 10/11 (64 bit), Vulkan-képes videokártya és 5 GB szabad hely kell. A három lépés:</p>
+          <ol class="steps">
+            <li><h3>Csomagold ki a játékoscsomagot</h3><p>A <b>Játék letöltése</b> gombbal töltsd le a Windowsos ZIP-et (48 MB). Jobb kattintás → <b>Az összes kibontása</b>. A teljes csomagot bontsd ki egy tetszőleges, írható mappába.</p><div class="btn-row"><a class="btn big" href="https://github.com/mesterlovesz/remake/releases/download/v0.1.0-player.1/Mesterlovesz-Ujratoltve-Windows.zip">Játék letöltése · Windows</a></div></li>
+            <li><h3>Tedd az ISO-t az indító mellé</h3><p>A <b>Játékfájlok</b> gomb az Archive.org-on található magyar <b>A Mesterlövész</b> ISO-ját tölti le. Másold abba a mappába, ahol az <code>Indit.bat</code> van. Egy ISO legyen itt; a neve maradhat az eredeti. A lemezkép feldolgozását az indító elintézi.</p>
+<div class="btn-row btn-row-note"><a class="btn big" href="https://archive.org/download/a_mesterlovesz_pc_windows_thesniper_hu_iso_202010/A_mesterlovesz.iso" data-iso target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M12 2 2 7v2h20V7zM4 10h3v8H4zm6.5 0h3v8h-3zM17 10h3v8h-3zM2 19h20v3H2z"/></svg>Játékfájlok</a><span class="small">Az eredeti játék lemezképe (ISO) az Internet Archive-on érhető el: harmadik fél által feltöltve; a jogok a jogtulajdonosoké; a projekt a játékot nem tárolja és nem terjeszti.</span></div>
+<pre class="code tree" aria-label="Mappaszerkezet">Mesterlovesz/
+├─ Indit.bat
+├─ A_mesterlovesz.iso
+├─ .player/
+└─ OLVASS-EL.txt</pre></li>
+            <li><h3>Duplakattints az <code>Indit.bat</code> fájlra</h3><p>Az <b>első futáskor</b> az indító kinyeri a játék adatait és előkészíti a pályákat, modelleket, hangokat és átvezetőket. Ez néhány perc; hagyd nyitva az ablakot. Internet még kell a médiafeldolgozó automatikus letöltéséhez (31 MB). Utána indul a játék főmenüje.</p><p>A <b>későbbi indításoknál</b> már csak elindul, internet nélkül is. <b>Rustot, Pythont vagy az eredeti telepítőt nem kell telepítened.</b></p></li>
+          </ol>
+          <div class="btn-row"><a class="btn big" href="https://github.com/mesterlovesz/" data-gh="#readme">Részletes leírás a GitHubon</a><a class="btn big" href="https://archive.org/download/a_mesterlovesz_pc_windows_thesniper_hu_iso_202010/A_mesterlovesz.iso" data-iso target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M12 2 2 7v2h20V7zM4 10h3v8H4zm6.5 0h3v8h-3zM17 10h3v8h-3zM2 19h20v3H2z"/></svg>Játékfájlok</a></div>
+          <p class="small">Játékfájlok: az eredeti játék lemezképe (ISO) az Internet Archive-on érhető el; harmadik fél által feltöltve; a jogok a jogtulajdonosoké; a projekt a játékot nem tárolja és nem terjeszti.</p>
+          <p class="small">Ha megszakad az előkészítés, indítsd újra az <code>Indit.bat</code>-ot: a kész lépések kimaradnak. Részletes útmutató és hibaelhárítás: a GitHub-tároló README-je és <code>docs/PLAYER-hu.md</code>. Az első sikeres előkészítés után az ISO eltávolítható; az <code>output</code>, <code>GYARI</code> és <code>.player</code> mappát hagyd az indító mellett.</p>
+          <h3>Irányítás</h3>
+          <div class="tw"><table>
+            <tr><th>Gomb</th><th>Művelet</th></tr>
+            <tr><td>Egér · W A S D</td><td>Körbenézés · járás</td></tr>
+            <tr><td>Shift · Ctrl</td><td>Futás · guggolás</td></tr>
+            <tr><td>Szóköz</td><td>Ugrás</td></tr>
+            <tr><td>Bal / jobb egér</td><td>Lövés / másodlagos lövés (szkóp, lámpa)</td></tr>
+            <tr><td>E · R</td><td>Használat, beszélgetés · újratöltés</td></tr>
+            <tr><td>1–8 · C / Z / X</td><td>Fegyver elővétele · felszerelés, karakter, tulajdonságok</td></tr>
+            <tr><td>F5 / F9 · Esc</td><td>Gyorsmentés / gyorstöltés · játékmenü</td></tr>
+          </table></div>
+        </section>
+
+        <!-- ===== KISKÍNA ===== -->
+        <section class="pane" id="kiskina" aria-labelledby="h-kis" tabindex="0">
+          <h2 class="pt" id="h-kis">Kiskína (kiadatlan pálya)</h2>
+          <p class="lead">A játék fájljai között van egy pálya, amelyre a kampány sehol nem mutat: a <code>chinatown.dat</code>, a játék saját címe szerint <b>Kiskína</b>.</p>
+          <ul>
+            <li>Régebbi szerkesztőváltozat (DAT v83, 2002 májusa), saját töltőkép és zene.</li>
+            <li>17 szereplő, 34 párbeszédblokk, 45 beszédhang, útvonalháló, küldetésszkript.</li>
+            <li>Játszható: a kijárata A Templomra mutat. A remake <b>Bónusz</b> menüjéből indítható.</li>
+          </ul>
+          <p>A külön oldalon a teljes kutatás olvasható: mi bizonyított, mi következtetett, mi ismeretlen.</p>
+          <div class="btn-row"><a class="btn sm" href="kiskina.html">Kiskína: kiadatlan pálya →</a></div>
+        </section>
+
+        <!-- ===== GITHUB ===== -->
+        <section class="pane" id="github" aria-labelledby="h-gh" tabindex="0">
+          <h2 class="pt" id="h-gh">GitHub</h2>
+          <p>A forráskód, az indítási útmutató és a kutatási jegyzetek a <strong>remake</strong> tárolóban érhetők el ezen a GitHub-fiókon. A weboldal és a Kiskína médiaarchívuma külön tárolóban van; a játékhoz ezeket nem kell letölteni.</p>
+          <div class="btn-row">
+            <a class="btn big" href="https://github.com/mesterlovesz/" data-gh="">A projekt a GitHubon</a>
+            <a class="btn sm" href="https://github.com/mesterlovesz/" data-gh="#readme">README</a>
+            <a class="btn sm" href="https://github.com/mesterlovesz/" data-gh="/tree/{b}/docs">Kutatási jegyzetek</a>
+          </div>
+          <h3>Jogi megjegyzés</h3>
+          <p>Nem hivatalos rajongói projekt. Az <i>A Mesterlövész</i> / <i>Sniper: Path of Vengeance</i> és minden eleme a jogtulajdonosoké. A játék futtatásához saját példány kell; a Kiskína-archívum a gyári anyagokból készült kutatási válogatás.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div class="rimr" aria-hidden="true"><i></i><i></i><i></i></div>
+  <footer class="foot">
+    <div class="hazard hz-s" aria-hidden="true"></div>
+    <p class="foot-copy"><span>Nem hivatalos rajongói projekt. A játék és gyári anyagai a jogtulajdonosoké. · <a href="https://github.com/mesterlovesz/" data-gh="">GitHub</a></span><small class="llm-credit">Ezt az egész projektet egy LLM írta. Mindent <a href="https://www.mannin.hu/">mannin1337</a> promptolt, emberi kód nincs a projektben.</small></p>
+  </footer>
+  <div class="knob" aria-hidden="true"></div>
+</div>
+<div class="crt" aria-hidden="true"></div><div class="flick" aria-hidden="true"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

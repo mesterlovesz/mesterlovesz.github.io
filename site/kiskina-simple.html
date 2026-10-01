@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kiskína: a kihagyott pálya — egyszerű nézet</title>
+<meta name="description" content="Kiskína: a kihagyott pálya: teljes szöveg egyszerű, nagy betűs, díszítés nélküli nézetben.">
+<link rel="canonical" href="https://sniper.gay/kiskina.html"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Kiskína: a kihagyott pálya"><meta property="og:type" content="website">
+<meta property="og:image" content="https://sniper.gay/og-kiskina.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="simple.css"></head><body>
+<a class="skip" href="#pages">Ugrás a tartalomra</a>
+<header><p class="eyebrow">Egyszerű nézet</p><h1>Kiskína: a kihagyott pálya</h1>
+<p>Minden fejezet egymás alatt olvasható. A betűméret a böngésző nagyításával szabadon növelhető.</p>
+<nav aria-label="Oldalak"><a href="simple.html">Főoldal</a><a href="kiskina-simple.html">Kiskína</a>
+<a href="archive.html">Képek, hangok és fájlok</a><a href="kiskina.html">Vissza a retro nézethez</a></nav></header>
+<div class="layout"><nav class="contents" aria-label="Tartalomjegyzék"><a href="#osszefoglalo">Kiskína: a kihagyott pálya</a><a href="#palya">A pálya</a><a href="#szereplok">A 17 szereplő</a><a href="#szkript">Szkript és párbeszéd</a><a href="#hangok">Hangok és zene</a><a href="#jatszhato">Játszható-e?</a><a href="#archivum">Képek és hangarchívum</a><a href="#egyeb">Egyéb fájlok</a></nav>
+<main id="pages">
+
+        <section class="pane" id="osszefoglalo" aria-labelledby="h-os" tabindex="0">
+          <h2 class="pt" id="h-os">Kiskína: a kihagyott pálya</h2>
+          <p class="lead">A játék fájljai között van egy pálya, a <code>chinatown.dat</code>, amelynek a játék saját címe <b>Kiskína</b>, és amelyre a kampány útvonala sehol nem mutat. A kutatás állása: <b>2026. szeptember 30.</b>, alapja a saját, változatlan, telepített példány.</p>
+          <p class="note">A <a href="archive.html">képes és hangos archívum</a> külön oldalon megnyitható. A két pálya különbözik: <b>Kiskína</b> = <code>chinatown.dat</code>, <b>A Templom</b> = <code>chinatown2.dat</code>.</p>
+          <h3>Bizonyossági szintek</h3>
+          <p><span class="tag t-ok">bizonyított</span> közvetlenül a gyári fájlokból vagy egy futásból olvasható · <span class="tag t-inf">következtetett</span> a bizonyítékokból következik · <span class="tag t-unk">ismeretlen</span> az adatból nem dönthető el.</p>
+          <h3>Rövid válasz: elveszett pálya volt?</h3>
+          <div class="tw"><table>
+            <tr><th>Állítás</th><th>Amit a bizonyíték megenged</th></tr>
+            <tr><td>„Chinatownig egyáltalán nem lehetett eljutni.”</td><td><span class="tag t-ok">nem igaz</span> A kampány útvonala eléri a <code>chinatown2</code> pályát (A Templom); játékosbeszámoló és képgaléria-felirat is említ kínai maffiás Chinatown-szakaszt.</td></tr>
+            <tr><td>„A külön <code>chinatown.dat</code> normál játékban nem volt elérhető.”</td><td><span class="tag t-inf">erős, de nem végleges</span> Semmilyen gyári szkript, DAT-ajtó vagy kampányél nem mutat rá, és a <code>cshell.dll</code>, <code>Lithtech.exe</code>, <code>object.lto</code> fájlokban sincs „chinatown” szöveg. A <code>podziemia1c</code> kijárata egyenesen A Templomra mutat. Nem találtunk nyilvános beszámolót arról, hogy valaki a külön pályát a gyári játékban betöltötte volna, de ez nem bizonyítja, hogy parancssorból vagy más kiadásban senki sem tehette.</td></tr>
+            <tr><td>„A pályán NPC-k sem voltak.”</td><td><span class="tag t-ok">a gyári adatok szerint hamis</span> 17 elhelyezés van benne (katonák, civilek, állatok, újságlapok). Hogy a gyári motorban mind aktiválódott volna, futtatás nélkül nem mondható.</td></tr>
+            <tr><td>„Teljes lost media.”</td><td>Pontosabban: <b>a gyári telepítésben megőrzött, a fő útvonalból kihagyott pálya</b>. A DAT, az útvonalháló, az MI-szkript, 34 párbeszédblokk, 45 beszédhang, a zene és a töltőkép megmaradt; a gyári működése és az esetleges másik elérési útja <span class="tag t-unk">ismeretlen</span>.</td></tr>
+          </table></div>
+          <p>Érdekesség: a <code>rh7a-tunele</code> pályán a hős egy aktív, kampányban elhangzó mondata a „Kiskína” nevet használja. Ez nem feltétlenül erre a pályára utal, a név a kínai negyedet is jelölheti, amelynek A Templom is része.</p>
+          <h3>Mi dönthetné el a nyitott kérdést?</h3>
+          <p>Egy gyári motorral készült, azonosítható „Kiskína” című betöltés vagy végigjátszás; egy eredeti mentés, amelyben a <code>worlds\chinatown</code> szerepel; vagy a kiadott motor pontos pályabetöltő hívásának visszafejtése.</p>
+        </section>
+
+        <section class="pane" id="palya" aria-labelledby="h-pa" tabindex="0">
+          <h2 class="pt" id="h-pa">A pálya</h2>
+          <ul class="kvs">
+            <li><b>310</b>objektum</li>
+            <li><b>13 184</b>ütközési háromszög</li>
+            <li><b>2289 / 14 394</b>útvonal-csomópont / él</li>
+            <li><b>2</b>világanyag (mindkettő ugyanaz a szürke lemeztextúra)</li>
+          </ul>
+          <div class="tw"><table>
+            <tr><th>Mit mértünk</th><th>Eredmény</th><th></th></tr>
+            <tr><td>Fájlverzió</td><td><code>chinatown.dat</code>: 3,86 MB, DAT v83, 2002-05-21. A kampány többi pályája v85 (A Templom: 5,48 MB, 2002-12-23). A pálya tehát a korábbi, „májusi” szerkesztőváltozat terméke.</td><td><span class="tag t-inf">következtetett</span></td></tr>
+            <tr><td>Cím és töltés</td><td>A cím kulcsa „Kiskína”, a következő pályáé „A Templom”; saját gyári töltőképe van.</td><td><span class="tag t-ok">bizonyított</span></td></tr>
+            <tr><td>Kilépés</td><td>A pálya saját kétszárnyú ajtaja (<code>b_door0</code> + <code>b_door1</code>) A Templomra mutat. A szkriptblokk nem tartalmaz kilépési parancsot.</td><td><span class="tag t-ok">bizonyított</span></td></tr>
+            <tr><td>Kinézet</td><td>A világháló két anyaga ugyanaz a szürke lemeztextúra (A Templomé 76, más pályáké 20–183): nyers, „greybox”-szerű falak. A lightmap 4096×202-es atlasz; köd 1–1600 között. A szereplők, tárgyak, kellékek (65 modell) teljesen textúrázottak.</td><td><span class="tag t-ok">bizonyított</span></td></tr>
+            <tr><td>Fények</td><td>90 <code>Light</code>, 63 <code>ObjectLight</code>, 4 <code>DirLight</code>, 37 fénysprite. Nincs zónajelző, karakterkibocsátó, detektor, hangforrás.</td><td><span class="tag t-ok">bizonyított</span></td></tr>
+            <tr><td>Kezdőpont</td><td>A kezdőpont északra néz, egy sötét, közeli falra: ez a gyári pozíció és irány, nem kamerahiba.</td><td><span class="tag t-ok">bizonyított</span></td></tr>
+          </table></div>
+          <h3>Felépítés keletről nyugatra</h3>
+          <ol>
+            <li><b>Kezdőépület:</b> a kezdőpont, 3 katona, gyógycsomag, italok, a Glock és tára.</li>
+            <li><b>Átjáró:</b> a <code>Mason13</code> marker; a hozzá tartozó párbeszéd a gyári szkriptekben <b>nincs definiálva</b> <span class="tag t-ok">bizonyított</span>.</li>
+            <li><b>Fő utca:</b> négy civil, négy szélfújta újságlap, csirkeszerű állatok, 10 lampion, 5 fali telefon, 5 varjú (baked repülőkörrel), kis szobák rádióval, TV-vel.</li>
+            <li><b>Összekötő folyosó:</b> az első zónahatár: a hős gondolata, hogy ez az út a Maffia belső területére vezet.</li>
+            <li><b>Nyugati épület:</b> 3 őr, 12 felvehető tárgy, 2 automata.</li>
+            <li><b>Hosszú folyosó és kijárat:</b> automaták, a második zónahatár (a hős óvatosságra int, mert Tong Pau emberei mindenütt ott vannak), a kétszárnyú ajtó A Templomra.</li>
+          </ol>
+          <p>Felvehető tárgy összesen 18: 5 sör, 5 kóla, 3 Schnickers, 1 gabonapehely, 1 alma, 1 gyógycsomag, 1 Glock és 1 Glock-tár. Kulcs vagy küldetéstárgy nincs.</p>
+        </section>
+
+        <section class="pane" id="szereplok" aria-labelledby="h-sz" tabindex="0">
+          <h2 class="pt" id="h-sz">A 17 szereplő</h2>
+          <p>Forrás: a DAT <code>o_postac</code> objektumai és a gyári szereplő-definíciók <span class="tag t-ok">bizonyított</span>. Tong Pau nincs köztük. A kínai katonák kapcsolatfelvételét a gyári MI-szabályok adják.</p>
+          <div class="tw"><table>
+            <tr><th>Objektum</th><th>Mi ez</th><th>Fegyver</th><th class="n">HP</th><th class="n">XP</th><th>Hely (x; z)</th></tr>
+            <tr><td>o_postac1</td><td>kínai katona</td><td>Glock</td><td class="n">100</td><td class="n">150</td><td>6829; −780</td></tr>
+            <tr><td>o_postac2</td><td>kínai katona</td><td>HK G8</td><td class="n">100</td><td class="n">200</td><td>6956; −1476</td></tr>
+            <tr><td>o_postac3</td><td>kínai katona</td><td>Glock</td><td class="n">100</td><td class="n">150</td><td>6990; −1254</td></tr>
+            <tr><td>o_postac4</td><td>kis szárnyas állat (csirkeszerű)</td><td>–</td><td class="n">10</td><td class="n">–</td><td>5515; −564</td></tr>
+            <tr><td>o_postac5</td><td>civil (1)</td><td>–</td><td class="n">50</td><td class="n">10</td><td>5493; −1028</td></tr>
+            <tr><td>o_postac6</td><td>civil (4)</td><td>–</td><td class="n">50</td><td class="n">10</td><td>3786; −1406</td></tr>
+            <tr><td>o_postac7</td><td>civil (2)</td><td>–</td><td class="n">50</td><td class="n">10</td><td>5116; −916</td></tr>
+            <tr><td>o_postac8</td><td>civil (3)</td><td>–</td><td class="n">50</td><td class="n">10</td><td>3881; −910</td></tr>
+            <tr><td>o_postac9</td><td>kínai katona</td><td>Glock</td><td class="n">100</td><td class="n">150</td><td>1615; −1563</td></tr>
+            <tr><td>o_postac10</td><td>kínai katona</td><td>HK G8</td><td class="n">100</td><td class="n">200</td><td>1373; −914</td></tr>
+            <tr><td>o_postac11</td><td>kínai katona</td><td>HK G8</td><td class="n">100</td><td class="n">200</td><td>1110; −1357</td></tr>
+            <tr><td>o_postac21</td><td>kis szárnyas állat</td><td>–</td><td class="n">10</td><td class="n">–</td><td>2784; −1008</td></tr>
+            <tr><td>o_postac22</td><td>kis szárnyas állat</td><td>–</td><td class="n">10</td><td class="n">–</td><td>2720; −1328</td></tr>
+            <tr><td>o_postac26</td><td>szélfújta újságlap</td><td>–</td><td class="n">5</td><td class="n">–</td><td>4434; −1163</td></tr>
+            <tr><td>o_postac27</td><td>szélfújta újságlap</td><td>–</td><td class="n">5</td><td class="n">–</td><td>4256; −1200</td></tr>
+            <tr><td>o_postac28</td><td>szélfújta újságlap</td><td>–</td><td class="n">5</td><td class="n">–</td><td>3552; −1200</td></tr>
+            <tr><td>o_postac29</td><td>szélfújta újságlap</td><td>–</td><td class="n">5</td><td class="n">–</td><td>5472; −1264</td></tr>
+          </table></div>
+          <ul>
+            <li><b>Katonák:</b> a Glockosak (stoi alapfázis) a kontaktusra riasztanak; a HK G8-asok (nuda) fegyverhez nyúlnak. Mindegyiknek négy bőrváltozata van.</li>
+            <li><b>Civilek:</b> elfutnak, ha fegyvert látnak (ez a négy szabály csak Kiskínában létezik), és válaszolnak a megszólításra.</li>
+            <li><b>Állatok, újságlapok:</b> az állatok nem néznek a játékosra; az újságlap szélfújta, nem tömör és nem vérzik.</li>
+          </ul>
+        </section>
+
+        <section class="pane" id="szkript" aria-labelledby="h-sk" tabindex="0">
+          <h2 class="pt" id="h-sk">Szkript és párbeszéd</h2>
+          <p>A pálya küldetésblokkja a <code>gameai</code> szkriptben van (a címe a „level worlds\chinatown” blokk), a párbeszédek a <code>dialogi</code> szkriptben. A blokk <b>egyetlen pályaindító vagy befejező parancsot sem tartalmaz</b>: a kijáratot a DAT ajtaja adja <span class="tag t-ok">bizonyított</span>. Az <code>ai_*.txt</code> és <code>dialogi_*.txt</code> fájlok a telepítésben 0 bájtosak, a tartalom a fő szkriptekbe van beolvasztva.</p>
+          <h3>Nincs célkitűzés-lánc, hanem „beszivárgás” szabályrendszer</h3>
+          <ul>
+            <li>A katonák figyelmeztetnek, megállítanak és kérdeznek; a hős eljátszhatja, hogy hírt hoz Tong Pau testvéréről, Hanról (a kapcsolattartó O’Hara; mindketten halottak), vagy támadást vált ki, és harc lesz.</li>
+            <li>Két zónát két marker jelöl; a pálya célja a kijárati ajtó elérése.</li>
+            <li>16 logikai jelző viszi az állapotot (például: támad-e már az őrség, átlépted-e az első, illetve a szent zónát, viszel-e hírt Hanról, beengedtek-e).</li>
+            <li>A kapuőr-kérdések a második zóna után, egy katona közelében indulnak; Kiskína kijárati helyiségében nincs katona <span class="tag t-inf">következtetett</span>.</li>
+          </ul>
+          <h3>A 24 akció</h3>
+          <p>19 szó szerint azonos A Templom szkriptjével, 1 (<code>tongpo1</code>) csak a név kis-/nagybetűjében tér el, 4 (a civilek elfutása) csak Kiskínában van; A Templom 3 saját akciót ad (arany macska, kijárat). A <code>tongpo1</code> egy <code>tongpo</code> nevű szereplőre hivatkozik, aki Kiskínában nincs <span class="tag t-ok">bizonyított</span>.</p>
+          <h3>A 34 párbeszédblokk</h3>
+          <p>A jelzőkövetés szerint Kiskínában 29 blokk indulhat el, A Templomban 32; 27-et mindkét pálya közösen használ <span class="tag t-inf">következtetett</span>. Néhány jellemző blokk (a szöveget nem idézzük, csak a szerepét):</p>
+          <div class="tw"><table>
+            <tr><th>Blokk</th><th>Szerepe</th><th>Hatása</th><th>Ki indítja</th></tr>
+            <tr><td>Chiniole10</td><td>az őr figyelmeztet, hogy menj el</td><td>+ figyelmeztetett</td><td>akció; <b>csak Kiskína</b></td></tr>
+            <tr><td>ChinioleOstrzezenie</td><td>a hős gondolata az első zónahatáron</td><td>+ első zóna átlépve</td><td>marker; <b>csak Kiskína</b></td></tr>
+            <tr><td>ChinioleAtak</td><td>a hős gondolata a szent zóna határán</td><td>+ szent zóna átlépve</td><td>marker (mindkét pálya)</td></tr>
+            <tr><td>Chiniole12</td><td>az első őr megállít</td><td>+ megszólította</td><td>akció (mindkét pálya)</td></tr>
+            <tr><td>Chiniole13, 14</td><td>kapuőr-kérdés a második zóna után</td><td>–</td><td>akció (mindkét pálya)</td></tr>
+            <tr><td>Chiniole11</td><td>az őr elfogadja a Hanról szóló hírt, és Tong Paunak irányít</td><td>+ hírt visz</td><td>válasz</td></tr>
+            <tr><td>Chiniole15</td><td>az őr beenged</td><td>+ beengedve</td><td>válasz</td></tr>
+            <tr><td>Chiniole16</td><td>az őr támadást hirdet</td><td>+ támad az őrség</td><td>válasz</td></tr>
+            <tr><td>ChinioleBrama, Chiniole18, 19, 29, 30</td><td>a kapu és a hozzá tartozó hősgondolatok, köztük az 1000 XP-t adó (19)</td><td>+ XP (19)</td><td>marker / akció; <b>csak A Templom</b></td></tr>
+          </table></div>
+          <h3>Hiányzik, nem vált ki semmit</h3>
+          <ul>
+            <li>A <code>Mason13</code> marker párbeszéde a gyári szkriptekben nincs definiálva <span class="tag t-ok">bizonyított</span>.</li>
+            <li>Az elfutó civilek sorai hangtalanok (gyári állapot).</li>
+          </ul>
+        </section>
+
+        <section class="pane" id="hangok" aria-labelledby="h-ha" tabindex="0">
+          <h2 class="pt" id="h-ha">Hangok és zene</h2>
+          <ul class="kvs">
+            <li><b>45</b>beszédfájl a pályához</li>
+            <li><b>38 + 7</b>hivatkozott + sehonnan sem hívott</li>
+          </ul>
+          <ul>
+            <li>A 38 hivatkozott hangból 32 közös A Templommal, 4 csak A Templomé, <b>2 csak Kiskínáé</b> (az őr figyelmeztetése és a hős gondolata az első zónahatáron).</li>
+            <li><b>7 hang sehonnan sem hívott:</b> kettőnél a szövegkulcs egy másik hangra mutat (az eredeti szándék <span class="tag t-inf">következtetett</span>), ötnél (civilek) a kulcsok hangfájlja üres; az összerendelés csak a számozáson alapul.</li>
+            <li>A hangokat nem hallgattuk meg; a beszélő a szöveg előtagjából adódik. Az archívumban hangonként lejátszó van, de az csak a saját gépeden készül.</li>
+            <li><b>Zene:</b> a játék pályánként egyetlen sávot rendel (Kiskínához a nyugodtat, A Templomhoz a harcosat). Nyugodt/harci váltás nincs: a hozzá tartozó jelzőket sem a szkript, sem a <code>cshell.dll</code> nem olvassa <span class="tag t-ok">bizonyított</span>. Kiskínában végig a nyugodt sáv szól.</li>
+          </ul>
+        </section>
+
+        <section class="pane" id="jatszhato" aria-labelledby="h-ja" tabindex="0">
+          <h2 class="pt" id="h-ja">Játszható-e?</h2>
+          <p class="lead"><b>Igen:</b> a pálya betölthető, végigjátszható, a kijárata A Templomra vezet. Fejetlen, néma próbák (a <code>main</code> ágra építve):</p>
+          <div class="tw"><table>
+            <tr><th>Próba</th><th>Eredmény</th></tr>
+            <tr><td>katalógus (a 28. pálya)</td><td><span class="tag t-ok">megfelelt</span> a gyári szkript betölt, 17 szereplő</td></tr>
+            <tr><td>főmenü</td><td><span class="tag t-ok">megfelelt</span> új játék után a pálya betölt, 17 szereplő, a kezdőpontból lehet járni</td></tr>
+            <tr><td>bejárás</td><td><span class="tag t-ok">megfelelt</span> a bot a kezdőpontból az ajtóig ér, és A Templom kezdőpontján érkezik: 201,1 játékmásodperc, 8999 egység, 0 sebzés, 8 rövid (40–190 egységes) segített ugrás</td></tr>
+            <tr><td>járőrözés</td><td><span class="tag t-ok">megfelelt</span> az egyik katona a fázissebesség 99%-ával jár</td></tr>
+            <tr><td>tűzharc</td><td><span class="tag t-unk">nem állapítható meg</span> a próba öt katona mellett nem talál szabad állóhelyet; a katonák tényleges tűzharca Kiskínában nem mért</td></tr>
+          </table></div>
+          <h3>Hogyan érhető el a játékban</h3>
+          <ol>
+            <li>Főmenü, a lista új, kilencedik sora: <b>Bónusz</b> (nem gyári, a tulajdonos kérésére került be, a gyári sorok helye változatlan).</li>
+            <li>Ott a <b>Kiskína (kiadatlan pálya)</b> bejegyzés új játékot indít a pályán, alapértelmezett karakterrel és a gyári töltőképpel.</li>
+            <li>A kijárati ajtó nem A Templomba, hanem a főmenübe vezet; a gyorsmentés külön tárhelyre (<code>save\bonus.sav</code>) megy, a kampány mentéséhez nem nyúl.</li>
+          </ol>
+          <p>Ami hiányzik: nincs átmenet a kampányból a pályára, a világ új karakterrel indul, a <code>Mason13</code> marker nem vált ki semmit. Hogy a gyári motor hibátlanul betöltötte-e ezt a pályát: <span class="tag t-unk">ismeretlen</span>.</p>
+        </section>
+
+        <section class="pane" id="archivum" aria-labelledby="h-ar" tabindex="0">
+          <h2 class="pt" id="h-ar">Képek és hangarchívum</h2>
+          <p>A teljes kutatás képes és hangos változata: felülnézeti térkép, felvételek a remake-ből, gyári töltőképek, párbeszédhangok átirattal és zene. A hangok külön lejátszhatók, automatikusan semmi nem indul el.</p>
+          <p>A forrásjegyzékből a Kiskína pálya- és útvonalállománya, valamint a kinyert adatok és háromszöghálók is letölthetők. Az archívum külön jelöli a bizonyított tényeket, a következtetéseket és az ismeretlen részeket.</p>
+          <div class="btn-row"><a class="btn big" href="archive.html">Képek, hangok és fájlok →</a><a class="btn sm" href="archive.html#atirat">Párbeszédek meghallgatása</a></div>
+          <details><summary>Újra előállítás a saját telepítésből</summary><pre class="code">python -m tools.capture_kiskina
+python -m tools.build_cut_content_archive</pre><p>Az első parancs ablak és hang nélkül készíti el a felvételeket; a második a helyi <code>docs/cut-content.html</code> archívumot állítja össze.</p></details>
+        </section>
+
+        <section class="pane" id="egyeb" aria-labelledby="h-eg" tabindex="0">
+          <h2 class="pt" id="h-eg">Egyéb fájlok</h2>
+          <p>A gyári <code>worlds</code> könyvtárban összesen <b>31 DAT</b> van: 26 összekapcsolt kampánypálya, egy előszóvilág, a külön Kiskína és három további. Ez fájlleltár, nem 31 végigjátszható küldetés.</p>
+          <div class="tw"><table>
+            <tr><th>Állomány</th><th>Megállapítás</th><th>Nyitott kérdés</th></tr>
+            <tr><td><code>nic.dat</code></td><td>Kocsma-jelenet (v85, 2002-12): 13 szereplő, 14 tárgy, 7 ajtó; a szkriptben nincs hozzá pályablokk, a kampány nem hivatkozik rá.</td><td><span class="tag t-inf">teszt- vagy ideiglenes világ</span></td></tr>
+            <tr><td><code>outro.dat</code></td><td>Kis színpad két asztallal és egy jelenetobjektummal (v83, 2002-05, Kiskínával azonos verzió és hónap). A befejező jelenetet a játék a laboratórium-pálya saját objektumából indítja; erre semmi nem mutat.</td><td><span class="tag t-inf">a korai befejező világ lehetett</span></td></tr>
+            <tr><td><code>katscena.dat</code></td><td>A legrégebbi világfájl (v70, 2002-03): 2 szereplő, egy jelenetobjektum. Az intro jelenetet a játék a börtönpályán játssza.</td><td><span class="tag t-inf">az intro korai világa lehetett</span></td></tr>
+            <tr><td>egy régi ellenséghang</td><td>Egy nem hivatkozott hangfájl a kínai ellenségek mappájában; sem a szkriptek, sem a <code>cshell.dll</code> nem említi.</td><td><span class="tag t-unk">az Engine.REZ hivatkozásait nem vizsgáltuk</span></td></tr>
+            <tr><td>négy szkriptblokk</td><td>Szkriptblokkjuk van, de azonos nevű DAT nincs a telepítésben.</td><td><span class="tag t-unk">más buildhez vagy fejlesztői próbához tartozhattak</span></td></tr>
+          </table></div>
+          <p class="small">A teljes leltár és a kampányfelmérés a GitHub-tároló <code>docs/</code> mappájában van.</p>
+          <div class="btn-row"><a class="btn sm" href="simple.html">← Vissza a főoldalra</a></div>
+        </section>
+      </main></div><footer><span>Nem hivatalos rajongói projekt. A játék és gyári anyagai a jogtulajdonosoké. · <a href="https://github.com/mesterlovesz/" data-gh="">GitHub</a></span><small class="llm-credit">Ezt az egész projektet egy LLM írta. Mindent <a href="https://www.mannin.hu/">mannin1337</a> promptolt, emberi kód nincs a projektben.</small></footer>
+</body></html>

@@ -1,0 +1,16 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+/og-*.jpg
+  Cache-Control: public, max-age=3600
+
+/stella-head.png
+  Cache-Control: public, max-age=3600
+
+/cut-content-media/*
+  Cache-Control: public, max-age=86400
+
+/research/files/*
+  Content-Disposition: attachment
